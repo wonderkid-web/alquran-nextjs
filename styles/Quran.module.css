@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Naskh+Arabic&display=swap');
+
+.btn{
+    width: fit-content;
+    height: 40px;
+    background-color: white;
+    border-radius: 4px;
+    border: none;
+    cursor: pointer;
+    box-sizing: border-box;
+    color: #488395;
+    padding: .8em; 
+    font-weight: 600;
+    font-size: .9em;
+}
+
+.surah{
+    width: 35vw;
+    height: 100px;
+    background-color: white;
+    color: #488395;
+    border-radius: 5px;
+    box-sizing: border-box;
+    display: flex;
+    align-items: flex-start;
+    padding: 10px;
+    margin: 15px;
+    gap: .7em;
+    cursor: pointer;
+}
+
+.nomorSurah{
+    border-radius: 100%;
+    box-sizing: border-box;
+    border: solid #488395 2px;
+    font-size: 1.6em;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    padding-top: 7px;
+}
+
+.infoSurah{
+    position: relative;
+    top: -20px;
+    display: flex;
+    gap: .5em;
+}
+
+.ayat{
+    display: flex;
+    width: 80vw;
+    height: calc(fit-content + 20px);
+    box-sizing: border-box;
+    background-color: white;
+    padding: 10px;
+    flex-direction: row;
+    gap: 1em;
+    margin: 10px;
+    color: #488395;
+    align-items: center;
+    border-radius: 10px;
+    cursor: default;
+}
+
+.nomorAyat{
+    border-radius: 100%;
+    border: solid #488395 2px;
+    text-align: center;
+    height: 40px;
+    width: 40px;
+}
+
+.ayatSection{
+    font-size: 1.4em;
+    width: 100%;
+    margin-right: 20px;
+}
+
+.ayatArabic{
+    font-size: 1.5em;
+    text-align: right;
+    font-family: 'Noto Naskh Arabic', serif;
+}

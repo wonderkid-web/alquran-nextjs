@@ -1,7 +1,7 @@
 import { useRouter } from 'next/router';
 import styles from '../styles/Quran.module.css'
 
-export default function ({surah}) {
+export default function Surah ({surah}) {
   
     const router = useRouter()
 

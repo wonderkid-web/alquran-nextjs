@@ -1,4 +1,19 @@
-@import url('https://fonts.googleapis.com/css2?family=Noto+Naskh+Arabic&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Naskh+Arabic&family=Sofia+Sans:wght@300;400&display=swap');
+
+.main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-family: 'Sofia Sans', sans-serif;
+    font-weight: 300;
+}
+
+.h1{
+    text-align: center;
+    font-family: 'Sofia Sans', sans-serif;
+    font-weight: 400;
+}
 
 .btn{
     width: fit-content;
@@ -14,6 +29,10 @@
     font-size: .9em;
 }
 
+.surahContainer{
+    margin: auto;
+}
+
 .surah{
     width: 35vw;
     height: 100px;
@@ -25,7 +44,7 @@
     align-items: flex-start;
     padding: 10px;
     margin: 15px;
-    gap: .7em;
+    gap: 1em;
     cursor: pointer;
 }
 
@@ -38,6 +57,7 @@
     height: 50px;
     text-align: center;
     padding-top: 7px;
+    font-family: 'Sofia Sans', sans-serif;
 }
 
 .infoSurah{
@@ -53,9 +73,7 @@
     height: calc(fit-content + 20px);
     box-sizing: border-box;
     background-color: white;
-    padding: 10px;
     flex-direction: row;
-    gap: 1em;
     margin: 10px;
     color: #488395;
     align-items: center;
@@ -69,6 +87,7 @@
     text-align: center;
     height: 40px;
     width: 40px;
+    margin: 10px;
 }
 
 .ayatSection{
@@ -81,4 +100,39 @@
     font-size: 1.5em;
     text-align: right;
     font-family: 'Noto Naskh Arabic', serif;
+}
+
+@media screen and (max-width: 480px){
+    .h1{
+        text-align: center;
+        font-size: 1.8em;
+    }
+    .surah{
+        width: 85vw;
+    }
+    .nomorSurah{
+        width: 40px;
+        height: 40px;
+        padding-top: 2px;
+    }
+    .infoSurah{
+        margin-top: -10px;
+        font-size: 1.2em;
+    }
+    .ayat{
+        height: fit-content;
+    }
+    .ayatArabic{
+        font-size: 1.2em;
+    }
+    .jumlah_ayat, .nama_latin{
+        font-size: 1em;
+    }
+    .nomorAyat{
+        font-size: 1.3em;
+        width: 40px;
+        height: 30px;
+        margin: 10px;
+        padding-top: 5px;
+    }
 }

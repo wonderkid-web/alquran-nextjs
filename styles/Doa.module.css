@@ -1,0 +1,52 @@
+.doaContainer{
+    box-sizing: border-box;
+    width: 90vw;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    margin: 10px;
+    gap: 20px;
+}
+
+.doa{
+    overflow: hidden;
+    box-sizing: border-box;
+    background-color: white;
+    color: #488395;
+    border-radius: 10px;
+    cursor: default;
+    box-sizing: border-box;
+    padding: 0 20px;
+}
+
+.doaArabic{
+    font-size: 1.6rem;
+    text-align: right;
+}
+.doaArti, .doaLatin{
+    font-size: 1.2em;
+}
+
+@media screen and (max-width: 1600px ){
+    .doaContainer{
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+@media screen and (max-width: 1400px ){
+    .doaContainer{
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+@media screen and (max-width: 960px ){
+    .doaContainer{
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+@media screen and (max-width: 380px){
+    .doah1, .doaArabic{
+        font-size: 1.1rem;
+    }
+    .doaLatin, .doaArti{
+        font-size: 1rem;
+    }
+}

@@ -19,7 +19,12 @@ export default function Home() {
         <div>
             <Link href='/quran'>
               <button className={quran.btn}>
-                Read Al-Quran 
+                Baca Quran 
+              </button>
+            </Link>
+            <Link href='/doa'>
+              <button className={quran.btn}>
+                Baca Do'a sehari-hari 
               </button>
             </Link>
         </div>

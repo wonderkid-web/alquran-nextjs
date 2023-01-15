@@ -43,7 +43,10 @@
 }
 
 @media screen and (max-width: 380px){
-    .doah1, .doaArabic{
+    .doah1{
+        font-size: .9em;
+    }
+    .doaArabic{
         font-size: 1.1rem;
     }
     .doaLatin, .doaArti{

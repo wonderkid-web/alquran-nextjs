@@ -6,6 +6,7 @@ function IndividualSurah({surah}) {
   return (
     <div>
        <Ayat surah={surah.ayat} />
+       <h1>TEST</h1>
     </div>
   )
 }

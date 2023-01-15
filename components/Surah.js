@@ -13,7 +13,7 @@ export default function Surah ({surah}) {
     <div onClick={()=>handleClick(surah.nomor)} className={styles.surah}>
       <h1 className={styles.nomorSurah}>{surah.nomor}</h1>
       <div className={styles.surahSection}>
-        <h2>{surah.nama}</h2>
+        <h2 className={styles.surahArabic}>{surah.nama}</h2>
         <div className={styles.infoSurah}>
           <p>{surah.nama_latin}</p>
           <p>| Jumlah Surah: {surah.jumlah_ayat}</p>

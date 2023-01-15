@@ -6,8 +6,8 @@ export default function Ayat({ surah }) {
         <h1 className={styles.nomorAyat}>{ayat.nomor}</h1>
         <div className={styles.ayatSection}>
           <p className={styles.ayatArabic}>{ayat.ar}</p>
-          <p>{ayat.tr}</p>
-          <p>{ayat.idn}</p>
+          <p className={styles.ayatTranslate}>{ayat.tr}</p>
+          <p className={styles.ayatTerjemahan}>{ayat.idn}</p>
         </div>
       </div>
     );

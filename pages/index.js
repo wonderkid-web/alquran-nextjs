@@ -17,14 +17,19 @@ export default function Home() {
       <main className={quran.main}>
         <h1>Al-Quran App with Next.js</h1>
         <div>
+            <Link href='/doa'>
+              <button className={quran.btn}>
+                Baca Doa sehari-hari 
+              </button>
+            </Link>
             <Link href='/quran'>
               <button className={quran.btn}>
                 Baca Quran 
               </button>
             </Link>
-            <Link href='/doa'>
+            <Link href='/jadwal'>
               <button className={quran.btn}>
-                Baca Doa sehari-hari 
+                Jadwal Sholat kota kamu 
               </button>
             </Link>
         </div>

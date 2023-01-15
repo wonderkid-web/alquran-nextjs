@@ -1,0 +1,61 @@
+.lokasiContainer{
+    display: grid;
+    gap: 10px;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.inputJadwal{
+    width: 30vw;
+    padding: 10px;
+    box-sizing: border-box;
+    font-size: 1.4em;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: auto;
+    margin: 10px 0;
+    border: none;
+}
+
+.perkota{
+    box-sizing: border-box;
+    color: #488395;
+    background-color: white;
+    padding: 10px;
+    border-radius: 5px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.jadwalContainer{
+    display: grid;
+    grid-template-columns: repeat(3, 200px);
+    gap: 20px;
+}
+
+.jadwalBox{
+    box-sizing: border-box;
+    background-color: white;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    color: #488395;
+    font-size: 1.5em;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.jadwalh1{
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+@media screen and (max-width: 700px){
+    .lokasiContainer{
+        grid-template-columns: repeat(2, 1fr);
+        margin: 20px;
+    }
+    .inputJadwal{
+        width: 50vw;
+        margin: 10px 20px;
+    }
+}

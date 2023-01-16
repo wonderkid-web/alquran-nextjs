@@ -28,7 +28,6 @@
     padding: .8em; 
     font-weight: 600;
     font-size: .9em;
-    margin: 0 10px;
 }
 
 .surahContainer{
@@ -117,6 +116,12 @@
     text-align: left;
     font-weight: 200 !important;
 }
+.btnContainer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
 
 @media screen and (max-width: 780px){
     .h1{
@@ -168,6 +173,9 @@
     .surahArabic{
         text-align: center;
         font-size: 2em;
+    }
+    .btnContainer{
+        flex-direction: column;
     }
     
 }

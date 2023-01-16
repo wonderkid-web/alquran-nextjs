@@ -1,3 +1,4 @@
+import Link from "next/link"
 import { useRouter } from "next/router"
 import { useState } from "react"
 import styles from '../../styles/Jadwal.module.css'
@@ -22,8 +23,8 @@ export default function Index({semuaKota}) {
                         }
                     }).map(singleKota =>(
                         <div className={styles.perkota} key={singleKota.id} onClick={()=> router.push(`/jadwal/${singleKota.id}/`)}>
-                            <p>{singleKota.id}</p>
-                            <p>{singleKota.nama}</p>
+                            <p>KODE KOTA: {singleKota.id}</p>
+                            <p>NAMA KOTA: {singleKota.nama}</p>
                             <hr />
                         </div>
                     ))

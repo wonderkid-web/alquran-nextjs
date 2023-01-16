@@ -16,7 +16,7 @@ export default function Home() {
       </Head>
       <main className={quran.main}>
         <h1>Al-Quran App with Next.js</h1>
-        <div>
+        <div className={quran.btnContainer}>
             <Link href='/doa'>
               <button className={quran.btn}>
                 Baca Doa sehari-hari 

@@ -2,6 +2,8 @@
     display: grid;
     gap: 10px;
     grid-template-columns: repeat(3, 1fr);
+    box-sizing: border-box;
+    margin: 20px;
 }
 
 .inputJadwal{
@@ -10,9 +12,20 @@
     box-sizing: border-box;
     font-size: 1.4em;
     font-family: Arial, Helvetica, sans-serif;
-    margin: auto;
-    margin: 10px 0;
+    margin: 10px 20px;
     border: none;
+    border-radius: 8px;
+}
+
+.backLink{
+    text-decoration: none;
+    color: white;
+    font-size: 1.1em;
+    box-sizing: border-box;
+    background-color: #34606e;
+    padding: 5px;
+    box-sizing: border-box;
+    border-radius: 8px;
 }
 
 .perkota{
@@ -57,5 +70,23 @@
     .inputJadwal{
         width: 50vw;
         margin: 10px 20px;
+    }
+}
+
+@media screen and (max-width: 450px){
+    .lokasiContainer{
+        grid-template-columns: 1fr;
+    }
+    .inputJadwal{
+        width: 90%;
+        font-size: 1.2em;
+
+    }
+    .jadwalContainer{
+        margin-bottom: 10px;
+        font-size: 1em;
+        justify-content: center;
+        grid-template-columns: repeat(2, 40%);
+        align-content: center;
     }
 }

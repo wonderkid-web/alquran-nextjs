@@ -1,0 +1,138 @@
+.kitabContainer{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    text-align: center;
+}
+
+.haditsh1{
+    text-align: center;
+    font-size: 2.6em;
+}
+
+.kitabCard{
+    box-sizing: border-box;
+    padding: 10px;
+    background-color: white;
+    -webkit-border-top-right-radius: 7px;
+    -webkit-border-bottom-right-radius: 7px;
+    -moz-border-radius-bottomright: 20px;
+    -moz-border-radius-bottomleft: 2px;
+    /* border-top-right-radius: 2px;
+    border-bottom-left-radius: 2px; */
+    color: var(--fontColor);
+    box-shadow: 6px 0px 0px 0px rgba(146, 20, 20, 0.412) inset;
+    -webkit-box-shadow: 6px 0px 0px 0px rgba(85, 109, 29, 0.656) inset;
+    -moz-box-shadow: 6px 0px 0px 0px rgba(0,0,0,0.34) inset;
+    cursor: pointer;
+}
+
+.haditsContainer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.haditsCard{
+    margin: 10px;
+    box-sizing: border-box;
+    background-color: white;
+    color: var(--fontColor);
+    font-size: 1.6em;
+    border-radius: 5px;
+    padding: 30px;
+    line-height: 1.3em;
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.terjemahanText{
+    border-bottom: 3px solid var(--fontColor);
+    grid-column: span 3;
+    align-self: center;
+    justify-self: center;
+}
+
+.haditsArabic{
+    text-align: right;
+    line-height: 1.5em;
+}
+
+.haditsTranslate{
+    text-align: justify;
+    width: 90%;
+}
+
+.haditsSearchContainer{
+    display: grid;
+    justify-content: center;
+    grid-template-columns: 100px 100px 100px;
+    width: 90%;
+    margin: auto;
+    row-gap: 10px;
+}
+
+.inputSpesific{
+    grid-column: span 2;
+}
+
+.input{
+    font-size: 1em;
+    box-sizing: border-box;
+    padding: 5px;
+}
+
+.singleHadits{
+    background-color: white;
+    color: var(--fontColor);
+    font-size: 1.3em;
+    border-radius: 5px;
+    box-sizing: border-box;
+    padding: 20px;
+    display: grid;
+    width: 90%;
+    margin: auto;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.singleHaditsImam{
+    font-weight: bold;
+    text-transform: capitalize;
+    grid-column: span 2;
+}
+
+.singleHaditsNomor{
+    font-weight: bold;
+    text-transform: capitalize;
+}
+
+.singleHaditsArabic, .singleHaditsTranslate{
+    grid-column: span 3;
+}
+
+.singleHaditsTranslate{
+    text-align: justify;    
+}
+
+@media screen and (max-width: 450px){
+    .kitabContainer{
+        grid-template-columns: 90vw;
+    }
+    
+    .haditsCard{
+        width: 95%;
+    }
+    .haditsArabic{
+        font-size: 1em;
+    }
+    .haditsTranslate{
+        font-size: .9em;
+    }
+    .singleHaditsArabic, .singleHaditsTranslate{
+        line-height: 35px;
+    }
+    
+}

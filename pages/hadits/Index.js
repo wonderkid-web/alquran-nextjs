@@ -1,6 +1,6 @@
 import { useRouter } from "next/router";
 import styles from "../../styles/Hadits.module.css";
-export default function index({ namaImam }) {
+export default function Index({ namaImam }) {
 
     const router = useRouter()
 
@@ -9,7 +9,7 @@ export default function index({ namaImam }) {
       <h1 className={styles.haditsh1}>9 Kitab hadits</h1>
       <div className={styles.kitabContainer}>
         {namaImam.map((data) => (
-          <div className={styles.kitabCard} onClick={()=> router.push(`/hadits/${data.id}`)}>
+          <div key={data.available} className={styles.kitabCard} onClick={()=> router.push(`/hadits/${data.id}`)}>
             <h3>{data.name}</h3>
             <p>Tersedia: {data.available}</p>
           </div>

@@ -1,6 +1,7 @@
 import styles from '../../../styles/Hadits.module.css'
 
-export default function spesifikHadits({spesifikHadits, imamName, singleHadits}) {
+export default function SpesifikHadits({spesifikHadits, imamName, singleHadits}) {
+    
     
     return (
     <div className={styles.singleHadits}>

@@ -1,10 +1,10 @@
-import { useRouter } from 'next/router'
+import { useRouter as useRouterNext } from 'next/router'
 import { useState } from 'react'
 import styles from '../../../styles/Hadits.module.css'
 
-export default function imamName({imamName, kitab}) {
+export default function ImamName({imamName, kitab}) {
     const [spesifik, setSpesifik] = useState(1)
-    const router = useRouter()
+    const router = useRouterNext()
 
     return (
     <div>
@@ -19,7 +19,6 @@ export default function imamName({imamName, kitab}) {
             <button className={styles.rangeButton}> Cari </button>
         </div>
         <div className={styles.haditsContainer}>
-            {spesifik}
             {
                 kitab.data.hadiths.map((hadits)=>(
                     <div className={styles.haditsCard} key={hadits.number}>

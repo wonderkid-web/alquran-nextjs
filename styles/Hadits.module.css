@@ -61,6 +61,17 @@
     line-height: 1.5em;
 }
 
+.topContainer{
+    display: flex;
+    justify-content: space-around;
+    box-sizing: border-box;
+    border: solid;
+    width: 250px;
+    background-color: var(--fontColor);
+    color: white;
+    grid-column: 2;
+}
+
 .haditsTranslate{
     text-align: justify;
     width: 90%;
@@ -91,11 +102,12 @@
     font-size: 1.3em;
     border-radius: 5px;
     box-sizing: border-box;
-    padding: 20px;
     display: grid;
     width: 90%;
     margin: auto;
     grid-template-columns: repeat(3, 1fr);
+    text-align: center;
+    justify-items: center;
 }
 
 .singleHaditsImam{
@@ -110,7 +122,9 @@
 }
 
 .singleHaditsArabic, .singleHaditsTranslate{
+    text-align: center;
     grid-column: span 3;
+    width: 90%;
 }
 
 .singleHaditsTranslate{
@@ -131,8 +145,13 @@
     .haditsTranslate{
         font-size: .9em;
     }
-    .singleHaditsArabic, .singleHaditsTranslate{
-        line-height: 35px;
+
+    .singleHaditsArabic{
+        line-height: 30px;
+        text-align: justify;
+    }
+    .singleHaditsTranslate{
+        line-height: 25px;
     }
     
 }

@@ -5,8 +5,10 @@ export default function SpesifikHadits({spesifikHadits, imamName, singleHadits})
     
     return (
     <div className={styles.singleHadits}>
-        <p className={styles.singleHaditsImam}>imam: {imamName}</p> 
-        <p className={`${styles.singleHaditsNomor}`} >hadits nomor: {spesifikHadits}</p> 
+        <div className={styles.topContainer}>
+            <p className={styles.singleHaditsImam}>imam: {imamName}</p> 
+            <p className={`${styles.singleHaditsNomor}`} >hadits nomor: {spesifikHadits}</p> 
+        </div>
         
         <p className={styles.terjemahanText}><b>Arabic </b></p> 
         <p className={styles.singleHaditsArabic}>{singleHadits.data.contents.arab}</p>
@@ -19,6 +21,7 @@ export default function SpesifikHadits({spesifikHadits, imamName, singleHadits})
 }
 
 export async function getServerSideProps(context){
+    console.log(context.query)
     const {imamName, spesifikHadits} = context.query
 
     const raw = await fetch(`https://api.hadith.gading.dev/books/${imamName}/${spesifikHadits}`)

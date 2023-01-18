@@ -177,3 +177,13 @@
     }
     
 }
+
+@media screen and (max-width: 400px){
+    .main{
+        font-size: .9em;
+        text-align: center;
+    }
+    .btnContainer{
+        padding: 0;
+    }
+}

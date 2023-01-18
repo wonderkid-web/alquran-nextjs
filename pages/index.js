@@ -38,7 +38,14 @@ export default function Home() {
               </button>
             </Link>
         </div>
-        <h2>By Muhammad Wahyu Ramadhan</h2>
+        <div>
+          <h3>Find Me!</h3>
+          <ul>
+            <li></li>
+            <li></li>
+            <li></li>
+          </ul>
+        </div>
       </main>
     </>
   )

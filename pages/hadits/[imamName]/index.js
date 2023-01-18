@@ -28,6 +28,7 @@ export default function ImamName({imamName, kitab}) {
                         <p className={styles.haditsTranslate}><b>{hadits.number}.</b> {hadits.id}</p>
                     </div>
                 ))
+                
             }
         </div>
     </div>

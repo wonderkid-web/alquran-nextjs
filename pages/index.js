@@ -32,7 +32,7 @@ export default function Home() {
                 Jadwal Sholat kota kamu 
               </button>
             </Link>
-            <Link href='/hadits/index'>
+            <Link href='/hadits/'>
               <button className={quran.btn}>
                 Kumpulan 9 kitab imam Hadits
               </button>

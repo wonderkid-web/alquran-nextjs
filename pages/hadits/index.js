@@ -6,7 +6,7 @@ export default function Index({ namaImam }) {
 
     return (    
     <>
-      <h1 className={styles.haditsh1}>9 Kitab hadits</h1>
+      <h1 className={styles.haditsh1}>8 Kitab hadits</h1>
       <div className={styles.kitabContainer}>
         {
         namaImam.filter(data=>data.name !== "HR. Ahmad").map((data) => (

@@ -4,13 +4,13 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    font-family: 'Sofia Sans', sans-serif;
+    /* font-family: cursive; */
     font-weight: 300;
 }
 
 .h1{
     text-align: center;
-    font-family: 'Sofia Sans', sans-serif;
+    /* font-family: 'Sofia Sans', sans-serif; */
     font-weight: 400;
 }
 
@@ -57,7 +57,7 @@
     height: 50px;
     text-align: center;
     padding-top: 7px;
-    font-family: 'Sofia Sans', sans-serif;
+    /* font-family: 'Sofia Sans', sans-serif; */
 }
 
 .infoSurah{
@@ -104,7 +104,7 @@
 .ayatArabic{
     font-size: 1.5em;
     text-align: right;
-    font-family: 'Noto Naskh Arabic', serif;
+    /* font-family: 'Noto Naskh Arabic', serif; */
 
 }
 .ayatTranslate{

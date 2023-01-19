@@ -1,9 +1,15 @@
 :root{
   --fontColor: #488395;
+  --arabicFont: "LPMQ Isep Misbah";
 }
 
 @import url('https://fonts.googleapis.com/css2?family=Noto+Naskh+Arabic&family=Sofia+Sans:wght@300;400&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Noto+Naskh+Arabic&family=Sofia+Sans:wght@300;400&display=swap');
+@import url(//db.onlinewebfonts.com/c/eb289d26afbfd6114ddfdc053113218e?family=LPMQ+Isep+Misbah);
+
+@font-face {
+ font-family: "LPMQ Isep Misbah"; src: url("//db.onlinewebfonts.com/t/eb289d26afbfd6114ddfdc053113218e.eot"); src: url("//db.onlinewebfonts.com/t/eb289d26afbfd6114ddfdc053113218e.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/eb289d26afbfd6114ddfdc053113218e.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/eb289d26afbfd6114ddfdc053113218e.woff") format("woff"), url("//db.onlinewebfonts.com/t/eb289d26afbfd6114ddfdc053113218e.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/eb289d26afbfd6114ddfdc053113218e.svg#LPMQ Isep Misbah") format("svg");
+}
 
 html, body{
   margin: 0;
@@ -21,6 +27,7 @@ body{
 }
 
 body .main{
-  font-family: 'Sofia Sans', sans-serif;
+  /* font-family: 'Sofia Sans', sans-serif; */
   font-weight: 300;
+  font-family: cursive;
 }

@@ -47,6 +47,8 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    font-family: var(--arabicFont);
+    text-align: justify;
 }
 
 .terjemahanText{
@@ -108,6 +110,8 @@
     grid-template-columns: repeat(3, 1fr);
     text-align: center;
     justify-items: center;
+    font-family: var(--arabicFont);
+
 }
 
 .singleHaditsImam{
@@ -123,6 +127,8 @@
 
 .singleHaditsArabic, .singleHaditsTranslate{
     text-align: center;
+    font-family: var(--arabicFont);
+    /* font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; */
     grid-column: span 3;
     width: 90%;
 }

@@ -9,7 +9,7 @@ export default function Index({ namaImam }) {
       <h1 className={styles.haditsh1}>9 Kitab hadits</h1>
       <div className={styles.kitabContainer}>
         {
-        namaImam.map((data) => (
+        namaImam.filter(data=>data.name !== "HR. Ahmad").map((data) => (
           <div key={data.available} className={styles.kitabCard} onClick={()=> router.push(`/hadits/${data.id}`)}>
             <h3>{data.name}</h3>
             <p>Tersedia: {data.available}</p>

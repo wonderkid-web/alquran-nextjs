@@ -32,7 +32,7 @@ export default function ImamName({imamName, kitab}) {
                         <p className={styles.terjemahanText}><b>Arabic </b></p> 
                         <p className={styles.haditsArabic}>{hadits.arab}</p>
                         <p className={styles.terjemahanText}><b>Terjemahan </b></p> 
-                        <p className={styles.haditsTranslate}><b>{hadits.number}.</b> {hadits.id}</p>
+                        <p className={styles.haditsTranslate}>{hadits.id}</p>
                     </div>
                 ))
                 

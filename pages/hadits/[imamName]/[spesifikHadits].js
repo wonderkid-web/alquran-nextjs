@@ -1,23 +1,7 @@
-import styles from '../../../styles/Hadits.module.css'
+import SingleHadits from '../../../components/SingleHadits'
 
-export default function SpesifikHadits({spesifikHadits, imamName, singleHadits}) {
-    
-    
-    return (
-    <div className={styles.singleHadits}>
-        <div className={styles.topContainer}>
-            <p className={styles.singleHaditsImam}>imam: {imamName}</p> 
-            <p className={`${styles.singleHaditsNomor}`} >hadits nomor: {spesifikHadits}</p> 
-        </div>
-        
-        <p className={styles.terjemahanText}><b>Arabic </b></p> 
-        <p className={styles.singleHaditsArabic}>{singleHadits.data.contents.arab}</p>
-
-        <p className={styles.terjemahanText}><b>Terjemahan </b></p> 
-        <p className={styles.singleHaditsTranslate}>{singleHadits.data.contents.id}</p> 
-
-    </div>
-  )
+export default function spesifikHadits({spesifikHadits, imamName, singleHadits}) {
+    return <SingleHadits spesifikHadits={spesifikHadits} imamName={imamName} singleHadits={singleHadits} />
 }
 
 export async function getServerSideProps(context){

@@ -4,7 +4,6 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    /* font-family: cursive; */
     font-weight: 300;
 }
 
@@ -57,7 +56,6 @@
     height: 50px;
     text-align: center;
     padding-top: 7px;
-    /* font-family: 'Sofia Sans', sans-serif; */
 }
 
 .infoSurah{
@@ -67,6 +65,10 @@
     gap: .5em;
 }
 
+.surahArabic{
+    font-family: var(--arabicFont);
+
+}
 .ayat{
     width: 80vw;
     height: calc(fit-content + 20px);
@@ -104,15 +106,18 @@
 .ayatArabic{
     font-size: 1.5em;
     text-align: right;
-    /* font-family: 'Noto Naskh Arabic', serif; */
-
+    font-family: var(--arabicFont);
 }
 .ayatTranslate{
     border-bottom: solid 1px;
+    font-family: var(--arabicFont);
+
 }
 .ayatTerjemahan, .ayatTranslate{
     text-align: left;
     font-weight: 200 !important;
+    font-family: var(--arabicFont);
+
 }
 .btnContainer{
     display: flex;

@@ -2,16 +2,13 @@ import { useRouter as useRouterNext } from 'next/router'
 import { useState } from 'react'
 import styles from '../../../styles/Hadits.module.css'
 
-let inputRange1, inputRange2;
+// const myFont = localFont({ src: '../../font/LPMQ-Isep-Misbah/LPMQ-Isep-Misbah.woff2' })
 
 export default function ImamName({imamName, kitab}) {
     const [spesifik, setSpesifik] = useState(1)
     const [range1, setRange1] = useState(1)
     const [range2, setRange2] = useState(1)
     const router = useRouterNext()
-
-    inputRange1 = range1
-    inputRange2 = range2
 
     return (
     <div>
@@ -30,7 +27,7 @@ export default function ImamName({imamName, kitab}) {
                 kitab.data.hadiths.map((hadits)=>(
                     <div className={styles.haditsCard} key={hadits.number}>
                         <p className={styles.terjemahanText}><b>Arabic </b></p> 
-                        <p className={styles.haditsArabic}>{hadits.arab}</p>
+                        <p className={`${styles.haditsArabic}`}>{hadits.arab}</p>
                         <p className={styles.terjemahanText}><b>Terjemahan </b></p> 
                         <p className={styles.haditsTranslate}>{hadits.id}</p>
                     </div>

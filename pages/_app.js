@@ -1,6 +1,7 @@
 import '../styles/globals.css'
 // pages/_app.js
 import localFont from '@next/font/local'
+import Navbar from '../components/Navbar'
 
 // Font files can be colocated inside of `pages`
 
@@ -16,6 +17,7 @@ export default function App({ Component, pageProps }) {
     </style>
   
   <Component {...pageProps} />
+  <Navbar />
  </>
   )
 }

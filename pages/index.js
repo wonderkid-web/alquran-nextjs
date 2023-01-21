@@ -39,13 +39,13 @@ export default function Home() {
             </Link>
         </div>
         <div>
-          <h3>Find Me!</h3>
+          {/* <h3>Find Me!</h3>
           <ul>
             <li>
             </li>
             <li></li>
             <li></li>
-          </ul>
+          </ul> */}
         </div>
       </main>
 
